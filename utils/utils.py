@@ -4,6 +4,7 @@ from dbHandler.db_manager import DbManager
 from config.config import Config
 from kafka import KafkaConsumer
 from kafkaHandler.producer import Producer
+from utils import logger
 
 
 def getPropValue(prop):

@@ -1,0 +1,10 @@
+description: "This is a simple API to get details abotu all series and chapters"
+produces:
+- "application/json"
+responses:
+  200:
+    description: "Response for 200"
+    schema:
+      type: "object"
+  500:
+    description: "Response for 500 is an empty object"

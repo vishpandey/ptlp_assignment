@@ -1,0 +1,24 @@
+description: "This is a simple API to unlock a new chapter for a user."
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "accepts object"
+  required: "true"
+  schema:
+    type: "object"
+    properties:
+      series-id:
+        type: "string"
+      user-id:
+        type: "string"
+    example: {"series-id":"","user-id":""}
+responses:
+  200:
+    description: "Response for 200, 500 is same "
+    schema:
+      type: "object"
+      properties:
+        status:
+          type: "string"

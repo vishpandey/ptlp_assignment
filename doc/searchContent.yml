@@ -1,0 +1,12 @@
+description: "This is a simple API to search by series name or chapter title or both."
+produces:
+- "application/json"
+parameters:
+  - in: "query"
+    name: "series-title"
+    type: "string"
+    description: "search by series-title"
+  - in: "query"
+    name: "episode"
+    type: "string"
+    description: "search by chapter title"

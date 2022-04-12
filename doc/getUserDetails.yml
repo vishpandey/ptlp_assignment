@@ -1,0 +1,15 @@
+description: "This is a simple API to get details about a user."
+produces:
+- "application/json"
+parameters:
+  - in: "path"
+    name: "userId"
+    type: "string"
+    description: "Get details about a user and information about content unlocked for the user"
+responses:
+  200:
+    description: "Response for 200"
+    schema:
+      type: "object"
+  500:
+    description: "Response for 500 is an empty object"

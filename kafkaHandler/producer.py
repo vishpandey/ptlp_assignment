@@ -2,6 +2,7 @@ import logging
 import json
 import time
 from kafka import KafkaProducer
+from kafkaHandler import logger
 
 class Producer:
     def __init__(self, servers, topic):

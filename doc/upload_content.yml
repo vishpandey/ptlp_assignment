@@ -1,0 +1,26 @@
+description: "This is a simple API to upload bulk content."
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "accepts a array of objects"
+  required: "true"
+  schema:
+    type: "object"
+    properties:
+      series:
+        type: "object"
+      chapters:
+        type: "array"
+    example: {"series_list":[{"series":{"name":"","author":"","publication":"","total-Chapters":"","active":""},"chapters":[{"metadata":{"chapter-no":"","chapter-title":"","chapter-release-year":"","author":"","active":""},"content":""}]}]}
+responses:
+  200:
+    description: "Response for 200"
+    schema:
+      type: "object"
+      properties:
+        status:
+          type: "string"
+  500:
+    description: "Status 500 will be taken care of internally and not propagated to admin for now"

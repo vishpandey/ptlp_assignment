@@ -1,0 +1,26 @@
+description: "This is a simple API to upload bulk users."
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "accepts a array of objects"
+  required: "true"
+  schema:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      email:
+        type: "string"
+    example: {"users-list":[{"name":"","email":""},{"name":"","email":""}]}
+responses:
+  200:
+    description: "Response for 200, 500 is same "
+    schema:
+      type: "object"
+      properties:
+        status:
+          type: "string"
+  500:
+    description: "Status 500 will be taken care of internally and not propagated to admin for now"

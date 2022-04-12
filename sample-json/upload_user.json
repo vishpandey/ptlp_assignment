@@ -2,7 +2,11 @@
 	"users-list": [
 		{
 			"name":"",
-			"email":"",
+			"email":""
+		},
+		{
+			"name":"",
+			"email":""
 		}
 	]
 }
