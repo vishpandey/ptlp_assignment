@@ -13,7 +13,7 @@ parameters:
         type: "object"
       chapters:
         type: "array"
-    example: {"series_list":[{"series":{"name":"","author":"","publication":"","total-Chapters":"","active":""},"chapters":[{"metadata":{"chapter-no":"","chapter-title":"","chapter-release-year":"","author":"","active":""},"content":""}]}]}
+    example: {"series_list":[{"series":{"name":"","author":"","publication":"","total-chapters":"","active":""},"chapters":[{"metadata":{"chapter-no":"","chapter-title":"","chapter-release-year":"","author":"","active":""},"content":""}]}]}
 responses:
   200:
     description: "Response for 200"

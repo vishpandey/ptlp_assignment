@@ -7,7 +7,6 @@ from dbHandler.db_manager import DbManager
 from utils.utils import *
 from flasgger import Swagger
 from flasgger.utils import swag_from
-from swagger_ui import flask_api_doc
 
 app = Flask(__name__)
 app.config["SWAGGER"] = {"title":"Swagger-UI", "uiversion":2}

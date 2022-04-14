@@ -2,7 +2,7 @@ import pymongo
 
 class DbManager:
     def __init__(self, connection_string, db, collection):
-        self.url = "mongodb://" + connection_string
+        self.url = connection_string
         self.db = db
         self.collection = collection
         self.client = pymongo.MongoClient(self.url)
